@@ -1,0 +1,15 @@
+
+<kendo-grid
+    [data]="model"
+    [height]="410">
+    <kendo-grid-column field="id" width="130"></kendo-grid-column>
+    <kendo-grid-column field="title" width="130"></kendo-grid-column>
+    <kendo-grid-column field="instructor" width="130"></kendo-grid-column>
+    <kendo-grid-column width="100">
+            <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+               <button kendoButton [icon]="'edit'" (click)="edit(dataItem)">Edit</button>
+               <button kendoButton [icon]="'trash'">Delete</button>
+               <!-- <a [routerLink]="['/course', dataItem.id]">Edit</a> -->
+            </ng-template>
+        </kendo-grid-column>
+</kendo-grid>
