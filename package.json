@@ -20,8 +20,14 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@progress/kendo-angular-buttons": "^4.0.0",
+    "@progress/kendo-angular-dialog": "^3.10.0",
+    "@progress/kendo-angular-l10n": "^1.1.0",
+    "@progress/kendo-angular-treeview": "^2.5.0",
+    "@progress/kendo-theme-default": "latest",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
+    "rxjs-compat": "^6.0.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

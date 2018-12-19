@@ -1,3 +1,18 @@
-<h1>
-  course-category-list works!
-</h1>
+<button kendoButton (click)="addRoot()" [icon]="'add'">Add</button>
+
+<kendo-treeview kendoTreeViewExpandable 
+  [nodes]="model" 
+  textField="title"
+  [children]="loadChildren"
+  [hasChildren]="hasChildren"  >
+
+  <ng-template kendoTreeViewNodeTemplate let-dataItem>
+    <span style="margin-right:10px">{{dataItem.title}}</span>
+    <span class="k-icon k-i-edit pointer" (click)="edit(dataItem)"></span>
+    <span class="k-icon k-i-trash pointer" *ngIf="!hasChildren(dataItem)" (click)="delete(dataItem)"></span>
+    <span class="k-icon k-i-add pointer" (click)="addChild(dataItem)"></span>
+  </ng-template>
+
+</kendo-treeview>
+
+<div kendoDialogContainer></div>
