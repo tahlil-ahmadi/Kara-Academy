@@ -4,9 +4,7 @@ export class CourseCategory {
     description: string;
     children: Array<CourseCategory>;   
 
-    // constructor(id: number, title: string) {
-    //     this.id = id;
-    //     this.title = title;
-    //     this.children = new Array<CourseCategory>();
-    // }
+    fullDescription() : string {
+        return `${this.title} - ${this.description}`
+    }
 }
