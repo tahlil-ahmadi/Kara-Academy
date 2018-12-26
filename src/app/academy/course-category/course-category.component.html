@@ -1,3 +1,14 @@
-<h1>
-  course-category works!
-</h1>
+<form #categoryForm="ngForm">
+  <div>
+    <label>Title : </label>
+    <input type="text" name="title" [(ngModel)]="model.title" required #title="ngModel"/>
+    <span *ngIf="title.invalid">*</span>
+  </div>
+
+  <div>
+    <label>Description : </label>
+    <input type="text" name="description" [(ngModel)]="model.description" />
+  </div>
+
+  <button kendoButton (click)="save()" [disabled]="categoryForm.form.invalid">Save</button>
+</form>

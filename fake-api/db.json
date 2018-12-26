@@ -1,0 +1,33 @@
+{
+  "courseCategories": [
+    {
+      "id": 1,
+      "title": "Programming",
+      "description": "",
+      "children": [
+        {
+          "id": 99999,
+          "title": "Mobile Programming",
+          "description": "",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Network+",
+      "description": "network network++",
+      "children": []
+    },
+    {
+      "title": "sadasdasd",
+      "description": "asdf",
+      "id": 3
+    },
+    {
+      "title": "asdasdd",
+      "description": "ad",
+      "id": 4
+    }
+  ]
+}

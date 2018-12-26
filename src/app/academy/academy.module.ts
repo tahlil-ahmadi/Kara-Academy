@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { TreeViewModule } from '@progress/kendo-angular-treeview';
 import { GridModule } from '@progress/kendo-angular-grid';
@@ -24,7 +26,9 @@ import { CourseService } from './shared/course.service';
     TreeViewModule,
     ButtonModule,
     DialogModule,
-    GridModule
+    GridModule,
+    HttpClientModule,
+    FormsModule
   ],
   declarations: [
     CourseCategoryListComponent,
@@ -35,6 +39,7 @@ import { CourseService } from './shared/course.service';
   providers:[
     CourseCategoryService,
     CourseService
-  ]
+  ],
+  entryComponents: [ CourseCategoryComponent ]
 })
 export class AcademyModule { }
