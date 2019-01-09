@@ -14,7 +14,9 @@ export class CourseListComponent {
   constructor(private service: CourseService,
               private router: Router) {
 
-    this.model = service.getAll();
+    service.getAll().subscribe(a=>{
+      this.model = a;
+    });
   }
 
   edit(item: Course) {

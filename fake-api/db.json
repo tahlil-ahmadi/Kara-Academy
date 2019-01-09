@@ -2,7 +2,7 @@
   "courseCategories": [
     {
       "id": 1,
-      "title": "Programming",
+      "title": "Programming 2",
       "description": "",
       "children": [
         {
@@ -28,6 +28,15 @@
       "title": "asdasdd",
       "description": "ad",
       "id": 4
+    },
+    {
+      "title": "feee",
+      "description": "wqedqwe",
+      "id": 5
     }
+  ],
+  
+  "courses":[
+	{"id":1, "title":"asp.net mvc", "instructor":"john papa"}
   ]
 }
